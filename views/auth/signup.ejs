@@ -1,0 +1,27 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+
+<div class="login-container">
+    <i class="fab fa-twitter"></i>
+    <h1 class="form-title">Sign Up to Twitter</h1>
+    <%- include("../partials/flash") %>
+    <form action="/register" method="post">
+        
+        <input type="text" name="firstname" placeholder="First Name" 
+             required>
+        <input type="text" name="lastname" placeholder="Last Name" 
+            required>
+            <input type="email" name="email" placeholder="Email" autocomplete="off" 
+            required>
+        <input type="text" name="username" placeholder="Username" autocomplete="off" 
+            required>
+        <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+        <button class="btn" type="submit">Sign Up</button>
+    </form>
+    <a class="link" href="/login">Already have an account? Login Here</a>
+</div>
+
+<%- include("../partials/footer") %>

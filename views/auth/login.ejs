@@ -1,0 +1,28 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+
+<div class="login-container">
+  <i class="fab fa-twitter"></i>
+  <h1 class="form-title">Twitter Log in</h1>
+  <%- include("../partials/flash") %>
+  <form action="/login" method="post">
+    
+      <input type="text" name="username"  id="username" placeholder="Email or username" required>
+      <input type="password" name="password" id="password" placeholder="Password"  required>
+      <button class="btn" type="submit">Log in</button>
+  </form>
+  <a class="link" href="/register">Sign up for Twitter</a>
+  <div class="caption">
+    © created by: Saransh Gupta
+  </div>
+</div>
+
+
+</body>
+
+
+<%- include("../partials/footer") %>
+    
