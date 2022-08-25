@@ -8,6 +8,9 @@
     "start": "node app.js",
     "dev": "nodemon ./app.js"
   },
+  "engine":{
+    "node":"14.x"
+  },
   "author": "Saransh Gupta",
   "license": "ISC",
   "dependencies": {
